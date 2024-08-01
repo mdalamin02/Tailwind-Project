@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.6 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.7 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -692,10 +692,6 @@ video {
   align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
-}
-
 .justify-center {
   justify-content: center;
 }
@@ -829,16 +825,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/Image\/Fina-Mobile-Footer\.png\'\)\] {
+.bg-footerMobile {
   background-image: url('/Image/Fina-Mobile-Footer.png');
 }
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-footerMobile {
-  background-image: url('/Image/Fina-Mobile-Footer.png');
 }
 
 .from-grad1 {
@@ -853,10 +845,6 @@ video {
 
 .bg-cover {
   background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
 }
 
 .bg-no-repeat {
@@ -1147,10 +1135,6 @@ video {
 
   .md\:bg-transparent {
     background-color: transparent;
-  }
-
-  .md\:bg-\[url\(\'\/Image\/footer\.png\'\)\] {
-    background-image: url('/Image/footer.png');
   }
 
   .md\:bg-footDesktop {
