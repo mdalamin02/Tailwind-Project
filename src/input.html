@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/tailwind.config.js" />
+    <title>Tailwind Project</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Mini Header -->
+      <nav class="bg-tabColor md:bg-gray1">
+        <div
+          class="max-w-screen-desktop mx-auto py-4 px-2 desktop:text-base text-[10px] md: flex justify-between items-center"
+        >
+          <div class="flex space-x-3">
+            <div>
+              <div class="text-white flex items-center gap-x-1">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.8333 11.9784L12.1414 13.6567C11.8917 13.9128 11.5606 13.9996 11.2382 14C9.81252 13.9573 8.4649 13.257 7.35842 12.5378C5.5422 11.2165 3.87574 9.5782 2.82984 7.59832C2.4287 6.76809 1.95802 5.70878 2.00299 4.78209C2.007 4.43349 2.10094 4.09136 2.34645 3.86666L4.03831 2.17565C4.38963 1.87682 4.72938 1.98014 4.9542 2.32822L6.31531 4.90924C6.45857 5.21501 6.37639 5.54263 6.16265 5.76112L5.53933 6.38412C5.50085 6.43683 5.47635 6.49683 5.47573 6.56213C5.71475 7.48735 6.43886 8.34012 7.07854 8.92699C7.71821 9.51387 8.40579 10.309 9.29831 10.4972C9.40863 10.528 9.54376 10.5388 9.62269 10.4654L10.3478 9.72798C10.5978 9.53853 10.9587 9.44593 11.2255 9.60084H11.2382L13.6933 11.0503C14.0537 11.2762 14.0913 11.7128 13.8333 11.9784Z"
+                    fill="white"
+                  /></svg
+                >+880 1750 020408
+              </div>
+            </div>
+            <div class="text-white text-xs font-medium">|</div>
+            <div>
+              <div>
+                <div class="text-white flex items-center gap-x-1">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 5.35408V11.3846C15 11.9457 14.7695 12.4837 14.3593 12.8804C13.9491 13.2771 13.3927 13.5 12.8125 13.5H3.1875C2.60734 13.5 2.05094 13.2771 1.6407 12.8804C1.23047 12.4837 1 11.9457 1 11.3846V5.35408L7.77775 9.21085C7.84508 9.24925 7.92183 9.2695 8 9.2695C8.07817 9.2695 8.15492 9.24925 8.22225 9.21085L15 5.35408ZM12.8125 2.5C13.3508 2.49992 13.8701 2.69174 14.2713 3.03878C14.6725 3.38582 14.9272 3.8637 14.9869 4.381L8 8.35539L1.01313 4.381C1.07276 3.8637 1.32753 3.38582 1.7287 3.03878C2.12986 2.69174 2.64925 2.49992 3.1875 2.5H12.8125Z"
+                      fill="white"
+                    />
+                  </svg>
+                  contact@mediusware.com
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-1">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M2 10.0447C2 14.022 4.88867 17.3293 8.66667 18V12.222H6.66667V10H8.66667V8.222C8.66667 6.222 9.95533 5.11133 11.778 5.11133C12.3553 5.11133 12.978 5.2 13.5553 5.28867V7.33333H12.5333C11.5553 7.33333 11.3333 7.822 11.3333 8.44467V10H13.4667L13.1113 12.222H11.3333V18C15.1113 17.3293 18 14.0227 18 10.0447C18 5.62 14.4 2 10 2C5.6 2 2 5.62 2 10.0447Z"
+                fill="white"
+              />
+            </svg>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 2C5.58214 2 2 5.58214 2 10C2 14.4179 5.58214 18 10 18C14.4179 18 18 14.4179 18 10C18 5.58214 14.4179 2 10 2ZM13.8446 8.03036C13.85 8.11429 13.85 8.20179 13.85 8.2875C13.85 10.9089 11.8536 13.9286 8.20536 13.9286C7.08036 13.9286 6.0375 13.6018 5.15893 13.0393C5.31964 13.0571 5.47321 13.0643 5.6375 13.0643C6.56607 13.0643 7.41964 12.75 8.1 12.2179C7.22857 12.2 6.49643 11.6286 6.24643 10.8429C6.55179 10.8875 6.82679 10.8875 7.14107 10.8071C6.69237 10.716 6.28906 10.4723 5.99967 10.1175C5.71028 9.76265 5.55265 9.31858 5.55357 8.86071V8.83571C5.81607 8.98393 6.125 9.075 6.44821 9.0875C6.1765 8.90642 5.95368 8.66109 5.79948 8.37327C5.64529 8.08544 5.56451 7.76402 5.56429 7.4375C5.56429 7.06786 5.66071 6.73036 5.83393 6.4375C6.33197 7.0506 6.95345 7.55204 7.65797 7.90922C8.3625 8.26641 9.1343 8.47135 9.92321 8.51071C9.64286 7.1625 10.65 6.07143 11.8607 6.07143C12.4321 6.07143 12.9464 6.31071 13.3089 6.69643C13.7571 6.6125 14.1857 6.44464 14.5679 6.21964C14.4196 6.67857 14.1089 7.06607 13.6964 7.31071C14.0964 7.26786 14.4821 7.15714 14.8393 7.00179C14.5696 7.39821 14.2321 7.75 13.8446 8.03036Z"
+                fill="white"
+              />
+            </svg>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 2C5.58167 2 2 5.58167 2 10C2 14.4183 5.58167 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58167 14.4183 2 10 2ZM8.04167 13.3158H6.42167V8.1025H8.04167V13.3158ZM7.22167 7.4625C6.71 7.4625 6.37917 7.1 6.37917 6.65167C6.37917 6.19417 6.72 5.8425 7.2425 5.8425C7.765 5.8425 8.085 6.19417 8.095 6.65167C8.095 7.1 7.765 7.4625 7.22167 7.4625ZM13.9583 13.3158H12.3383V10.4267C12.3383 9.75417 12.1033 9.2975 11.5175 9.2975C11.07 9.2975 10.8042 9.60667 10.6867 9.90417C10.6433 10.01 10.6325 10.16 10.6325 10.3092V13.315H9.01167V9.765C9.01167 9.11417 8.99083 8.57 8.96917 8.10167H10.3767L10.4508 8.82583H10.4833C10.6967 8.48583 11.2192 7.98417 12.0933 7.98417C13.1592 7.98417 13.9583 8.69833 13.9583 10.2333V13.3158Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+      <!-- 2nd Header -->
+      <nav class="desktop:py-6 max-w-screen-desktop mx-auto p-5">
+        <div class="flex flex-wrap items-center justify-between mx-auto">
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="/Image/Logo.png" class="h-8" alt="mediusware" />
+          </a>
+          <button
+            data-collapse-toggle="navbar-solid-bg"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-md text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-solid-bg"
+            aria-expanded="false"
+          >
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+            <ul
+              class="flex items-center flex-col font-medium mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block md:p-0 rounded md:bg-transparent md:dark:bg-transparent"
+                  aria-current="page"
+                  >HOME</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block md:p-0 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:dark:hover:bg-transparent uppercase"
+                  >SERVICES</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block 3 md:p-0 text-gray-900 roundedmd:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  >PROJECTS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block md:p-0 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:hover:bg-gray-700md:dark:hover:bg-transparent"
+                  >WHY MEDIUSWARE</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:hover:bg-gray-700md:dark:hover:bg-transparent"
+                  >BLOG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block md:p-0 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:hover:bg-gray-700md:dark:hover:bg-transparent"
+                  >CAREER</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block md:p-0 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:hover:bg-gray-700md:dark:hover:bg-transparent"
+                  >OUR TEAM</a
+                >
+              </li>
+              <li>
+                <button
+                  class="bg-red flex bg-btn text-white py-3 px-6 rounded-xl text-base gap-x-2"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.0497 6C15.0264 6.19057 15.924 6.66826 16.6277 7.37194C17.3314 8.07561 17.8091 8.97326 17.9997 9.95M14.0497 2C16.0789 2.22544 17.9713 3.13417 19.4159 4.57701C20.8606 6.01984 21.7717 7.91101 21.9997 9.94M10.2266 13.8631C9.02506 12.6615 8.07627 11.3028 7.38028 9.85323C7.32041 9.72854 7.29048 9.66619 7.26748 9.5873C7.18576 9.30695 7.24446 8.96269 7.41447 8.72526C7.46231 8.65845 7.51947 8.60129 7.63378 8.48698C7.98338 8.13737 8.15819 7.96257 8.27247 7.78679C8.70347 7.1239 8.70347 6.26932 8.27247 5.60643C8.15819 5.43065 7.98338 5.25585 7.63378 4.90624L7.43891 4.71137C6.90747 4.17993 6.64174 3.91421 6.35636 3.76987C5.7888 3.4828 5.11854 3.4828 4.55098 3.76987C4.2656 3.91421 3.99987 4.17993 3.46843 4.71137L3.3108 4.86901C2.78117 5.39863 2.51636 5.66344 2.31411 6.02348C2.08969 6.42298 1.92833 7.04347 1.9297 7.5017C1.93092 7.91464 2.01103 8.19687 2.17124 8.76131C3.03221 11.7947 4.65668 14.6571 7.04466 17.045C9.43264 19.433 12.295 21.0575 15.3284 21.9185C15.8928 22.0787 16.1751 22.1588 16.588 22.16C17.0462 22.1614 17.6667 22 18.0662 21.7756C18.4263 21.5733 18.6911 21.3085 19.2207 20.7789L19.3783 20.6213C19.9098 20.0898 20.1755 19.8241 20.3198 19.5387C20.6069 18.9712 20.6069 18.3009 20.3198 17.7333C20.1755 17.448 19.9098 17.1822 19.3783 16.6508L19.1835 16.4559C18.8339 16.1063 18.6591 15.9315 18.4833 15.8172C17.8204 15.3862 16.9658 15.3862 16.3029 15.8172C16.1271 15.9315 15.9523 16.1063 15.6027 16.4559C15.4884 16.5702 15.4313 16.6274 15.3644 16.6752C15.127 16.8453 14.7828 16.904 14.5024 16.8222C14.4235 16.7992 14.3612 16.7693 14.2365 16.7094C12.7869 16.0134 11.4282 15.0646 10.2266 13.8631Z"
+                      stroke="white"
+                      stroke-width="1.66667"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Book a Call
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="bg-gradient-to-r from-grad1 to-grad2 px-5 pt-10 pb-14 max-w"
+    >
+      <div class="md:grid md:grid-cols-12 gap-12 md:py-28 md:px-28">
+        <div class="col-span-7">
+          <h1
+            class="text-3xl md:text-[80px] font-bold text-center md:text-left md:uppercase md:leading-[90px]"
+          >
+            Get in Touch with <br />
+            <span class="text-textColor">Us Today!</span>
+          </h1>
+          <p class="text-base md:text-2xl mt-8 mb-16 text-center md:text-start">
+            Click the 'Schedule a Meeting' button and select a time that works
+            for you, and we'll be ready to talk! Excited to connect with you in
+            the near future!
+          </p>
+          <button
+            class="flex bg-btn text-white py-[18px] rounded-xl md:text-lg text-[22px] gap-3 w-full md:w-4/12 justify-center"
+          >
+            <svg
+              width="28"
+              height="30"
+              viewBox="0 0 28 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M26 12.3334H2M19.3333 1.66669V7.00002M8.66667 1.66669V7.00002M8.4 28.3334H19.6C21.8402 28.3334 22.9603 28.3334 23.816 27.8974C24.5686 27.5139 25.1805 26.902 25.564 26.1493C26 25.2937 26 24.1736 26 21.9334V10.7334C26 8.49314 26 7.37304 25.564 6.51739C25.1805 5.76474 24.5686 5.15282 23.816 4.76933C22.9603 4.33335 21.8402 4.33335 19.6 4.33335H8.4C6.15979 4.33335 5.03969 4.33335 4.18404 4.76933C3.43139 5.15282 2.81947 5.76474 2.43597 6.51739C2 7.37304 2 8.49314 2 10.7334V21.9334C2 24.1736 2 25.2937 2.43597 26.1493C2.81947 26.902 3.43139 27.5139 4.18404 27.8974C5.03969 28.3334 6.15979 28.3334 8.4 28.3334Z"
+                stroke="white"
+                stroke-width="2.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Schedule a Meeting
+          </button>
+        </div>
+        <div class="lg:col-span-5 col-span-12 pt-14">
+          <img src="/Image/Hero-image.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Project Price  -->
+    <section
+      class="grid grid-cols-1 md:grid-cols-12 md:py-24 md:px-28 gap-12 pt-10 pb-10"
+    >
+      <div class="col-span-8 rounded-lg pb-10">
+        <h2 class="text-3xl md:text-5xl font-bold pb-8 text-center md:text-left">
+          Drop Us a <span style="color: #00a88e">Line</span>
+        </h2>
+        <form class="bg-gray2 md:p-6 p-4" action="">
+          <div class="md:flex justify-between mt-8 gap-6">
+            <div class="md:w-1/2 text-base font-medium mb-5">
+              <label for="name" class="mb-4">Name* </label
+              ><input
+                type="text"
+                required
+                placeholder="Enter Your Name"
+                class="rounded-xl py-3 px-4 w-full mt-4 border border1"
+              />
+            </div>
+            <div class="md:w-1/2 text-base font-medium mb-4">
+              <label for="enail"> Email*</label
+              ><input
+                type="text"
+                required
+                placeholder="Enter Your Email"
+                class="rounded-xl py-3 px-4 w-full mt-4 border border1"
+              />
+            </div>
+          </div>
+          <div class="md:flex justify-between mt-8 gap-6">
+            <div class="md:w-1/2 text-base font-medium mb-5">
+              <label for="name" class="mb-4"
+                >Phone Number <span class="text-text1">(Optional)</span> </label
+              ><input
+                type="number"
+                placeholder="Enter Your Phone Number"
+                class="rounded-xl py-3 px-4 w-full mt-4 border border1"
+              />
+            </div>
+            <div class="md:w-1/2 text-base font-medium mb-4">
+              <label for="name"
+                >Company Name <span class="text-text1">(Optional)</span> </label
+              ><input
+                type="text"
+                placeholder="Enter Your Company Name"
+                class="rounded-xl py-3 px-4 w-full mt-4 border border1"
+              />
+            </div>
+          </div>
+          <div>
+            <p class="mt-8 mb-4 text-base font-medium" for="name">
+              Services You Need
+              <span class="text-text1"> (You can choose multiple)</span>
+            </p>
+
+            <div class="flex flex-wrap gap-3">
+              <button
+                class="bg-btn2 text-textColor md:py-4 md:px-6 rounded-lg py-2 px-4 text-xs md:text-base font-medium border border-textColor"
+              >
+                Mobile Development
+              </button>
+              <button
+                class="bg-btn3 text-gray1 md:py-4 md:px-6 text-xs py-2 px-4 md:text-base rounded-lg font-medium border border1"
+              >
+                SQA Solution
+              </button>
+              <button
+                class="bg-btn3 text-gray1 md:py-4 md:px-6 text-xs py-2 px-4 md:text-base rounded-lg font-medium border border1"
+              >
+                Web UX/UI Design
+              </button>
+              <button
+                class="bg-btn3 text-gray1 md:py-4 md:px-6 text-xs py-2 px-4 md:text-base rounded-lg font-medium border border1"
+              >
+                API Integration
+              </button>
+              <button
+                class="bg-btn3 text-gray1 md:py-4 md:px-6 text-xs py-2 px-4 md:text-base rounded-lg font-medium border border1"
+              >
+                Mobile UX/UI Design
+              </button>
+
+              <button
+                class="bg-btn3 text-gray1 md:py-4 md:px-6 text-xs py-2 px-4 md:text-base rounded-lg font-medium border border1"
+              >
+                Software Development
+              </button>
+              <button
+                class="bg-btn3 text-gray1 md:py-4 md:px-6 text-xs py-2 px-4 md:text-base rounded-lg font-medium border border1"
+              >
+                Apps Design
+              </button>
+              <button
+                class="bg-btn3 text-gray1 md:py-4 md:px-6 text-xs py-2 px-4 md:text-base rounded-lg font-medium border border1"
+              >
+                Digital Marketing
+              </button>
+              <button
+                class="bg-btn3 text-gray1 md:py-4 md:px-6 text-xs py-2 px-4 md:text-base rounded-lg font-medium border border1"
+              >
+                Custom Service
+              </button>
+            </div>
+            <p class="mt-8 mb-4 text-base font-medium" for="name">
+              Choose a budget
+              <span class="text-text1"> (Optional)</span>
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <button
+                class="bg-btn2 text-textColor md:py-4 md:px-6 rounded-lg py-2 px-4 text-xs md:text-base font-medium border border-textColor"
+              >
+                Less than > $5,00
+              </button>
+              <button
+                class="bg-btn3 text-gray1 md:py-4 md:px-6 text-xs py-2 px-4 md:text-base rounded-lg font-medium border border1"
+              >
+                $5,00 - $1,000
+              </button>
+              <button
+                class="bg-btn3 text-gray1 md:py-4 md:px-6 text-xs py-2 px-4 md:text-base rounded-lg font-medium border border1"
+              >
+                $1,001 - $1500
+              </button>
+              <button
+                class="bg-btn3 text-gray1 md:py-4 md:px-6 text-xs py-2 px-4 md:text-base rounded-lg font-medium border border1"
+              >
+                $1500 - $2,000
+              </button>
+            </div>
+            <div>
+              <p class="mt-8 mb-4 text-base font-medium">
+                Deep Details About Your Query
+                <span class="text-text1">(Optional)</span>
+              </p>
+
+              <div class="">
+                <textarea
+                  rows="4"
+                  name="text"
+                  id="message"
+                  placeholder="Tell us more about your query"
+                  class="py-3 px-4 rounded-xl w-full mt-4 border border1"
+                ></textarea>
+              </div>
+            </div>
+            <!-- Attachment file -->
+            <div style="margin-top: 32px">
+              <p class="mt-8 mb-4 text-base font-medium">
+                Add Attachments
+                <span class="text-text1">(Optional)</span>
+              </p>
+
+              <div
+                class="bg-white flex items-center justify-between rounded-xl py-3 px-4 md:w-full mt-4 border border1"
+              >
+                <span class="text-text1 truncate w-44"
+                  >(a brief, idea, branding guideline, old design,...)</span
+                >
+                <input id="file-upload" hidden type="file" />
+                <label
+                  for="file-upload"
+                  class="text-xs flex items-center bg-textColor text-white font-bold gap-4 py-1.5 px-4 rounded-md"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.1016 7.26634L8.09121 13.2768C6.72437 14.6436 4.50829 14.6436 3.14146 13.2768C1.77462 11.9099 1.77462 9.69384 3.14146 8.327L9.15187 2.3166C10.0631 1.40537 11.5405 1.40537 12.4517 2.3166C13.3629 3.22782 13.3629 4.7052 12.4517 5.61643L6.67699 11.3911C6.22138 11.8467 5.48269 11.8467 5.02708 11.3911C4.57147 10.9355 4.57147 10.1968 5.02708 9.74122L10.0947 4.67362"
+                      stroke="white"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  Attach file
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+        <!-- CTA -->
+
+        <div class="mt-16 max-w-[90%] mx-auto">
+          <button
+            class="flex items-center gap-2 text-white py-3.5 px-8 text-lg bg-btn rounded-lg font-bold justify-center w-full md:max-w-fit"
+          >
+            Send Inquiry<svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.5004 12H5.00043M4.91577 12.2915L2.58085 19.2662C2.39742 19.8142 2.3057 20.0881 2.37152 20.2569C2.42868 20.4034 2.55144 20.5145 2.70292 20.5567C2.87736 20.6054 3.14083 20.4869 3.66776 20.2497L20.3792 12.7296C20.8936 12.4981 21.1507 12.3824 21.2302 12.2216C21.2993 12.082 21.2993 11.9181 21.2302 11.7784C21.1507 11.6177 20.8936 11.5019 20.3792 11.2705L3.66193 3.74776C3.13659 3.51135 2.87392 3.39315 2.69966 3.44164C2.54832 3.48375 2.42556 3.59454 2.36821 3.74078C2.30216 3.90917 2.3929 4.18255 2.57437 4.72931L4.91642 11.7856C4.94759 11.8795 4.96317 11.9264 4.96933 11.9744C4.97479 12.0171 4.97473 12.0602 4.96916 12.1028C4.96289 12.1508 4.94718 12.1977 4.91577 12.2915Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Contact Side -->
+      <aside class=" md:col-span-4 col-span-8 px-5 ">
+        <h2 class="text-3xl font-bold text-gray1 mb-8">
+          Contact <span class="text-textColor mb-8">Details</span>
+        </h2>
+        <div class="flex flex-col gap-6">
+          <div class="bg-gray2 p-6">
+            <p class="text-lg font-bold mb-6">Bangladesh Address</p>
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center text-base font-medium gap-2">
+                <img src="/icon/Location.svg" alt="" />
+                <p>18/5 Ring Road, Mohammadpur, Dhaka</p>
+              </div>
+              <div class="flex items-center text-base font-medium gap-2">
+                <img src="/icon/carbon_phone-voice-filled.svg" alt="" />
+                <p>+8801750020408</p>
+              </div>
+              <div class="flex items-center text-base font-medium gap-2">
+                <img src="/icon/Message.svg" alt="" />
+                <p style="font-size: 16px">career@mediusware.com</p>
+              </div>
+              <div class="flex items-center text-base font-medium gap-2">
+                <img src="/Icon/Frame 1597882109.svg" alt="" />
+                <p>Monday to Friday: 12 PM - 9 PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray2 p-6">
+            <p class="text-lg font-bold mb-6">USA Address</p>
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center text-base font-medium gap-2">
+                <img src="/icon/Location.svg" alt="" />
+                <p>1903 commonwealth st, Houston tx 77006</p>
+              </div>
+              <div class="flex items-center text-base font-medium gap-2">
+                <img src="/icon/carbon_phone-voice-filled.svg" alt="" />
+                <p>+1 (978) 431-0122</p>
+              </div>
+              <div class="flex items-center text-base font-medium gap-2">
+                <img src="/icon/Message.svg" alt="" />
+                <p style="font-size: 16px">career@mediusware.com</p>
+              </div>
+              <div class="flex items-center text-base font-medium gap-2">
+                <img src="/Icon/Frame 1597882109.svg" alt="" />
+                <p>Monday to Friday: 12 PM - 9 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-3xl font-bold text-gray1 my-8">
+          Company <span class="text-textColor">Deck</span>
+        </h2>
+
+        <button
+          class="flex items-center gap-2 bg-btn6 py-3 px-6 rounded-lg border border-textColor"
+        >
+          Company Profile<img src="/icon/download-01.svg" alt="" />
+        </button>
+        <h2 class="text-3xl font-bold text-gray1 my-8">
+          Follow <span class="text-textColor">Us</span>
+        </h2>
+        <div class="flex gap-6">
+          <img src="/Icon/Social icon.svg" alt="" />
+          <img src="/Icon/Social icon (1).svg" alt="" />
+          <img src="/Icon/Social icon (2).svg" alt="" />
+          <img src="/Icon/Social icon (4).svg" alt="" />
+        </div>
+      </aside>
+    </section>
+    <!-- Location -->
+    <section class="hidden md:flex px-28 pb-24 bg-map gap-6">
+      <iframe
+        class="rounded-xl w-full aspect-video"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.2659123829603!2d90.35965407533666!3d23.773543478654556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0a4c3c2f0e7%3A0xb2bf6d2980763c80!2s18%2C%205%20Ring%20Rd%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1719993319563!5m2!1sen!2sbd"
+        allowfullscreen=""
+        loading="lazy"
+        height="100%"
+        width="100%"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <iframe
+        class="rounded-xl w-full aspect-video"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.944014176291!2d-95.40052462572685!3d29.750333432448098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c0a1be5dd0b5%3A0x8d962634f0cc573c!2s1903%20Commonwealth%20St%2C%20Houston%2C%20TX%2077006%2C%20USA!5e0!3m2!1sen!2sbd!4v1722233544582!5m2!1sen!2sbd"
+        allowfullscreen=""
+        loading="lazy"
+        height="100%"
+        width="100%"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="bg-footerMobile md:bg-footDesktop bg-no-repeat bg-cover "
+    >
+      <div
+        class="max-w-screen-desktopFooter mx-auto text-xs md:flex md:text-base justify-between gap-12 text-white pt-10 px-5 md:pt-32 pb-6 border-b border-bordaFooter"
+      >
+        <div class="pb-10">
+          <img src="/Image/logo-dark.png" class="mb-6" alt="" />
+          <p class="text-lg">
+            We shape the art of <br />
+            technology
+          </p>
+          <div class="flex gap-4 pt-6">
+            <img src="/Icon/Vector.svg" alt="" />
+            <img src="/Icon/Vector (1).svg" />
+            <img src="/Icon/Vector (2).svg" />
+            <img src="/Icon/Shape.svg" />
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3 text-base pb-10">
+          <p class="text-lg font-bold">Company</p>
+
+          <div><a href="">Services</a></div>
+          <div><a href="">About Us</a></div>
+          <div><a href="">FAQs</a></div>
+          <div><a href="">Services</a></div>
+        </div>
+        <div class="flex flex-col gap-3 text-base pb-10">
+          <p class="text-lg font-bold">Services</p>
+
+          <div><a href="">Software Development </a></div>
+          <div><a href="">UI/UX Design & Dev</a></div>
+          <div><a href="">Web Development</a></div>
+          <div><a href="">Web Development</a></div>
+          <div><a href="">API Integration</a></div>
+          <div><a href="">Mobile App Design</a></div>
+          <div><a href="">E commerce Solutions</a></div>
+        </div>
+        <div>
+          <div class="flex flex-col gap-3 text-base pb-10">
+            <p class="text-lg font-bold">Bangladesh Address</p>
+            <div class="flex items-start gap-3">
+              <img src="/Icon/Footer-1.svg" alt="" />
+              <p>
+                18/5 Ring Road, <br />
+                Mohammadpur, Dhaka
+              </p>
+            </div>
+            <div class="flex items-start gap-3">
+              <img src="/Icon/Footer-3.svg" alt="" />
+              <p>+8801750020408</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <img src="/Icon/Footer-2.svg" alt="" />
+              <p>18/5 career@mediusware.com</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <img src="/Icon/Footer-4.svg" alt="" />
+              <p>
+                18/5 Monday to Friday: 12 PM - <br />
+                9 PM
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="flex flex-col gap-3 text-base">
+            <p class="text-lg font-bold">USA Address</p>
+            <div class="flex items-start gap-3">
+              <img src="/Icon/Footer-1.svg" alt="" />
+              <p>
+                1903 commonwealth st, <br />
+                Houston tx 77006
+              </p>
+            </div>
+            <div class="flex items-start gap-3">
+              <img src="/Icon/Footer-3.svg" alt="" />
+              <p>+1 (978) 431-0122</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <img src="/Icon/Footer-2.svg" alt="" />
+              <p>18/5 career@mediusware.com</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <img src="/Icon/Footer-4.svg" alt="" />
+              <p>
+                18/5 Monday to Friday: 12 PM - <br />
+                9 PM
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-white text-center py-7">
+        © 2023 Mediusware. All Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>
